@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row first">
+      <div class="col-sm">
+        <div  class="chatform">
+          <message-list [messages]="messages"></message-list>
+          <message-form [message]="message" [messages]="messages"></message-form>
+        </div>    
+      </div>
+      <div class="col-sm">
+        <app-map></app-map>        
+      </div>
+    </div>
+    <div class="row second">
+        <app-recommendation-bar></app-recommendation-bar>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+<!-- the below code is for table -->
+<!-- 
+<table>
+  <tr class="firstRow">
+    <td width="50"><app-chatbot></app-chatbot></td>
+    <td><app-map></app-map></td>
+  </tr>
+  <tr class="secondRow">
+    
+      <app-recommendation-bar></app-recommendation-bar>
+    
+  </tr>
+</table> -->
